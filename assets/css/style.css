@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --text-base: #fff; 
+    --text-title: #ccc; 
+    --background: #191816;
+    --form-background: rgba(36, 34, 31, 0.7); 
+    --primary-color: #ffc632;
+}
+
+body {
+    background: url('../img/despertar-da-lua.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.container__content__info {
+    margin: 1 pix solid var(--background-base);
+}
+
+.container {
+    max-width: 90%; /* Alterado para porcentagem */
+    height: auto; /* Alterado para automático */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--form-background);
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px; /* Adicionado de volta */
+}
+
+.content__title {
+    flex-grow: 0;
+    color: var(--text-title);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    padding: 10px; /* Alterado o padding */
+    align-self: center;
+}
+
+.input-paragraph {
+    color: var(--text-base);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.input {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 10px; /* Alterado o padding */
+    width: 100%; /* Alterado para porcentagem */
+    max-width: 400px; /* Limitando a largura máxima */
+}
+
+.input:hover {
+    background-color: var(--text-title); /* Alterar a cor de fundo */
+    color: var(--form-background); /* Alterar a cor do texto */
+}
+
+.input_bottom {
+    color: var(--form-background);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    background: var(--primary-color);
+    border: 2px solid var(--background);
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px; /* Alterado o padding */
+    width: 100%; /* Alterado para porcentagem */
+    max-width: 200px; /* Limitando a largura máxima */
+}
+
+.input_bottom:hover {
+    opacity: 0.8; /* Reduzir a opacidade */
+    transition: opacity 0.3s ease; /* Adicionar transição suave */
+}
+
+footer {
+    background: var(--form-background);
+    color: var(--text-title);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media queries para dispositivos menores */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Alterar o padding para dispositivos menores */
+    }
+    .content__title {
+        font-size: 1.5rem; /* Reduzir o tamanho da fonte */
+    }
+    .input,
+    .input_bottom {
+        max-width: 90%; /* Reduzir a largura máxima para dispositivos menores */
+    }
+}
+
+

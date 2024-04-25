@@ -1,0 +1,33 @@
+<!-- depois eu termino de fazer deusono -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/Ceifadores_de_Almassprite.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculadora de partida ranqueada</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="content__title">Saldo de partidas Rankeadas</h1><br>     
+            <p class="input-paragraph">Digite o número de vitórias:</p>
+            <input type="number" name="input-victories" id="victories" class="input" placeholder="0">           
+            
+            <p class="input-paragraph">Digite o número de derrotas:</p>
+            <input type="number" name="input-defeats" id="defeats" class="input" placeholder="0">
+            
+            <div class="container__buttons">
+                <button class="input_bottom" type="button" onclick="mostraResultadoDasPartidas()">Calcular</button>
+                <button class="input_bottom"  type="button" onclick="resetResultados()">Reset</button>
+            </div>        
+    </div>
+    <footer>
+        <p>Heverton Freire Barbosa &copy; 2024 - Todos os direitos reservados</p>
+    </footer>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
